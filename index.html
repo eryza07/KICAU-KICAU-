@@ -15,7 +15,7 @@
 
   <body>
       <main class="page">
-      <div class="glow">
+      <div class="glow"></div>
         <section class="portfolio"aria-labelledby="name">
           <p class="eyebrow">Porfolio pribadi</p>
 
@@ -29,13 +29,42 @@
             <p class="role">Bikin Game &amp; Bikin Film Animasi</p>
           </header>
 
-          <ui class="skill">
+          <ul class="skill">
             <li>Animasi</li>
             <li>Editing</li>
             <li>Fotografi</li>
             <li>Videografi</li>
             <li>Design</li>
             <li>Motion Graphic</li>
-          </ui>
-      </div>
-    </body>
+          </ul>
+        <section class="music-player"aria-label="Pemutar Musik">
+          <div class="player-heading">
+            <span>Now Playing</span>
+            <span class="live-status">●<span id="status">Jeda</span></span>
+          </div>
+          <div class="song-info">
+            <div class="vinly" id="vinly"><span></span></div>
+            <div>
+              <a id="link"target="_blank"rel="noopener"><h2 id="title">Golden Brown</h2></a>
+              <p id="artist">The Stranglres</p>
+           </div>
+          </div>
+
+          <input class="progress" id="progress" types="range" min="0" max="200" value="0" aria-label="Posisi lagu">
+
+          <div class="controls">
+            <button class="icon-button" id="prev" type="button" aria-label="Lagu sebelumnya">«</button>
+            <button class="play-button" id="play">▶ <span>Putar</span></button>
+            <button class="icon-button" id="next" type="button" aria-label="Lagu berikutnya">»</button>
+          </div>
+
+          <div class="song-list" id="list" aria-label="Daftar Lagu"></div>
+        </section>
+
+        <p class="footer-note">GOKIIILLLLLLL!!</p>
+        </section>
+      </main>
+
+    <script type="module" scr="script.js"></script>
+</body>
+</html>
