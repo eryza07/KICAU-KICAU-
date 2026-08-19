@@ -316,7 +316,7 @@ to { opacity: 1; transform: translateY(0); }
 }
 
 @media (max-width: 420px) {
-  .page {padding: 38px 16px; }
+  .page { padding: 38px 16px; }
   .music-player { padding: 18px; }
-  .profile-photo {width: 136px; height: 136px; }
+  .profile-photo { width: 136px; height: 136px; }
 }
