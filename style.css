@@ -41,14 +41,14 @@ button {
   left: 50%;
   width: 620px;
   height: 620px;
-  transform: transformX(-50%);
+  transform: translateX(-50%);
   pointer-event: none;
   background: radial-gradient(circle, rgba(222, 165, 78, .13), transparent 66%);
 }
 
 .portfolio {
   position: relative;
-  width: min(100%, 480px);
+  width: min(100%, 470px);
   text-align: center;
   animation: appear .7s ease-out;
 }
@@ -92,6 +92,7 @@ button {
   bottom: 13px;
   height: 13px;
   border: 2px solid #78c889cc;
+  border-radius: 50%;
   background: #78c889;
   box-shadow: 0 0 11px #78c889cc;
 }
