@@ -68,7 +68,7 @@ button {
 
 .profile-photo {
   position: relative;
-  widht: 156px;
+  width: 156px;
   height: 156px;
   margin: 0 auto 28px;
   border: 1px solid #ffffff29;
@@ -88,10 +88,10 @@ button {
 .online-dot {
   position: absolute;
   right: 10px;
-  left: 9px;
   bottom: 13px;
+  widht: 13px;
   height: 13px;
-  border: 2px solid #78c889cc;
+  border: 2px solid #11100f;
   border-radius: 50%;
   background: #78c889;
   box-shadow: 0 0 11px #78c889cc;
