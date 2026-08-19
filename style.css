@@ -42,7 +42,7 @@ button {
   width: 620px;
   height: 620px;
   transform: translateX(-50%);
-  pointer-event: none;
+  pointer-events: none;
   background: radial-gradient(circle, rgba(222, 165, 78, .13), transparent 66%);
 }
 
@@ -73,7 +73,7 @@ button {
   margin: 0 auto 28px;
   border: 1px solid #ffffff29;
   border-radius: 50%;
-  box-shadow: 0 0 0 8px #ffffff06, 0 22px 48 #00000061;
+  box-shadow: 0 0 0 8px #ffffff06, 0 22px 48px #00000061;
 }
 
 .profile-photo img {
@@ -117,7 +117,7 @@ button {
   max-width: 390px;
   margin: 24px auto 0;
   color: #bbb4a8;
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.8;
 }
 
@@ -278,7 +278,7 @@ button {
 
 .song-item {
   display: grid;
-  grid-tamplate-columns: 26px 1fr auto;
+  grid-template-columns: 26px 1fr auto;
   width: 100%;
   padding: 10px 0;
   border-bottom: 1px solid #ffffff0f;
@@ -287,16 +287,16 @@ button {
   font-size: 11px;
 }
 
-.song-item span: nth-child(2) {
-  color: #f1c577;
+.song-item span:nth-child(2) {
+  color: #c7c0b5;
 }
 
 .song-item:hover span:nth-child(2),
-.song-item:hover span:nth-child(2) {
-  color: #dca44e;
+.song-item:active span:nth-child(2) {
+  color: #f1c577;
 }
 
-.song-item:hover span:first-child {
+.song-item:active span:first-child {
   color: #dca44e;
 }
 
@@ -307,7 +307,7 @@ button {
 }
 
 @keyframes spin {
-  to { transfrom: rotate(360deg); }
+  to { transform: rotate(360deg); }
 }
 
 @keyframes appear {
