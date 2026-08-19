@@ -143,7 +143,7 @@ button {
   border-radius: 16px;
   background: #191715;
   text-align: left;
-  box-shadow: 0 18px 50px #0000002e:
+  box-shadow: 0 18px 50px #0000002e;
 }
 
 .player-heading, .time-row {
@@ -243,7 +243,7 @@ button {
 
 .icon button {
   padding: 7px;
-  color: #b7afa3
+  color: #b7afa3;
   background: transparent;
   font-size: 18px;
 }
@@ -257,13 +257,13 @@ button {
   padding: 11px 14px;
   border-radius: 999px;
   background: #dca44e;
-  color: #201b14
+  color: #201b14;
   font-size: 12px;
   font-weight: 600;
 }
 
 .icon-button:hover {
-  color: #f5eee2
+  color: #f5eee2;
 }
 
 .play-button:hover {
@@ -291,7 +291,7 @@ button {
 
 .song-item:hover span:nth-child(2),
 .song-item:hover span:nth-child(2) {
-  color: #dca44e
+  color: #dca44e;
 }
 
 .song-item:hover span:first-child {
