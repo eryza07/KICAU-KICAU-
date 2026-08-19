@@ -42,7 +42,7 @@ button {
   width: 620px;
   height: 620px;
   transform: transformX(-50%);
-  pointer_event: none;
+  pointer-event: none;
   background: radial-gradient(circle, rgba(222, 165, 78, .13), transparent 66%);
 }
 
@@ -62,7 +62,7 @@ button {
 
 .eyebrow {
   margin-bottom: 42px;
-  color: relative;
+  color: #8e887d;
   font-size: 10px;
 }
 
@@ -172,7 +172,7 @@ button {
   place-items: center;
   border: 1px solid #49443d;
   border-radius: 50%;
-  background: repeatingh-radial-gradient(circle, #24211e 0 2px, #151412 3px 5px);
+  background: repeating-radial-gradient(circle, #24211e 0 2px, #151412 3px 5px);
 }
 
 .vinyl span {
