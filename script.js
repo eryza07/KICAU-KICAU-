@@ -28,7 +28,7 @@ const formatTime = (seconds) => {
   return `${minutes}:${secs}`;
 };
 
-function updateUi() {
+function updateUI() {
   const [name, singer, duration, audioFile] = songs[currentSongIndex];
 
   title.textContent = name
