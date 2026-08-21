@@ -1,14 +1,14 @@
 const songs = [
-  ["Golden Brown", "The Stranglers", "Golden Brown.mp3"]
-  ["What If I Call", "Alex Crichton", "What If I Call.mp3]
-  ["Country Roads", " THE Gypsy Queens", "Country Roads.mp3]
+  ["Golden Brown", "The Stranglers", "Golden Brown.mp3"],
+  ["What If I Call", "Alex Crichton", "What If I Call".mp3],
+  ["Country Roads", " THE Gypsy Queens", "Country Roads".mp3],
 ];
 
 const $ = (id) => document.querySelector(id);
 
 const title = $("#title");
 const artist = $("#artist");
-const link = $("#link);
+const link = $("#link");
 const bar = $("#progress");
 const now = $("#now");
 const left = $("#left");
@@ -76,7 +76,7 @@ function togglePlay() {
     audio.play();
   }
 
-  IsPlaying = !isPlaying;
+  isPlaying = !isPlaying;
   updateUI();
 }
 
@@ -95,7 +95,7 @@ audio.addEventListener("timeupdate", () => {
 
 playBtn.onclick = togglePlay;
 $("#next").onclick = () => changeSong((currentSongIndex + 1) % songs.length);
-$("#prev").onclick = () => changeSong((currentSongIndex + songs.lenght - 1) % songs.length);
+$("#prev").onclick = () => changeSong((currentSongIndex + songs.length - 1) % songs.length);
 
 bar.oninput = () => {
   audio.currentTime = Number(bar.value);
