@@ -296,7 +296,7 @@ button {
   color: #f1c577;
 }
 
-.song-item:active span:first-child {
+.song-item.active span:first-child {
   color: #dca44e;
 }
 
