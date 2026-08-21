@@ -41,7 +41,7 @@ function updateUI() {
     const isActive = index === currentSongIndex ? "active" : "";
     return `
       <a class="song-item ${isActive}" data-song="${index}" href="javascript:void(0);">
-        <span>0${index + 1}</span>
+        <span>${index + 1}</span>
         <span>${songData[0]}</span>
         <span>▶</span>
       </a>
