@@ -292,7 +292,7 @@ button {
 }
 
 .song-item:hover span:nth-child(2),
-.song-item:active span:nth-child(2) {
+.song-item.active span:nth-child(2) {
   color: #f1c577;
 }
 
@@ -311,7 +311,7 @@ button {
 }
 
 @keyframes appear {
-  from { opacity: 0; transform: translateY(15px) }
+  from { opacity: 0; transform: translateY(15px); }
 to { opacity: 1; transform: translateY(0); }
 }
 
