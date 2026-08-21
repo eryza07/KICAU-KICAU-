@@ -24,8 +24,8 @@ let isPlaying = false
 const formatTime = (seconds) => {
   if (isNaN(seconds)) return "0:00";
   const minutes = Math.floor(seconds / 60);
-  const secs = String(Math.floor(seconds % 60)).padStart(2. "0")
-  return `${minutes};${secs}`;
+  const secs = String(Math.floor(seconds % 60)).padStart(2, "0")
+  return `${minutes}:${secs}`;
 };
 
 function updateUi() {
@@ -49,7 +49,7 @@ function updateUi() {
   }).join("");
 
   status.textContent = isPlaying ? "Memutar" : "Jeda";
-  playBtn.innerHTML = IsPlaying ? "Ⅱ <span>Jeda</span>" : "▶ <span>Putar</span>"
+  playBtn.innerHTML = isPlaying ? "Ⅱ <span>Jeda</span>" : "▶ <span>Putar</span>"
   vinyl.classList.toggle("is-spinning", isPlaying);
 }
 
@@ -70,20 +70,20 @@ function togglePlay() {
     audio.src = songs[currentSongIndex][3];
   }
 
-  if (isPlayiing) {
+  if (isPlaying) {
     audio.pause();
   } else {
     audio.play();
   }
 
-  isPlaying = !isPlaying;
+  IsPlaying = !isPlaying;
   updateUI();
 }
 
 audio.addEventListener("timeupdate", () => {
   const currentTime = audio.currentTime;
-  const durationn = songs[currentSongIndex][2];
-  const precent = (currentTime / duration) * 100;
+  const duration = songs[currentSongIndex][2];
+  const percent = (currentTime / duration) * 100;
 
   bar.max = duration;
   bar.value = currentTime;
@@ -93,16 +93,16 @@ audio.addEventListener("timeupdate", () => {
   left.textContent = `-${formatTime(duration - currentTime)}`;
 })
 
-playBtn.oneclick = togglePlay;
-$("#next").oneclick = () => changeSong((currentSongIndex + 1) % songs.lenght);
-$("#prev").oneclick = () => changeSong((currentSongIndex + songs.lenght - 1) % songs.lenght);
+playBtn.onclick = togglePlay;
+$("#next").onclick = () => changeSong((currentSongIndex + 1) % songs.length);
+$("#prev").onclick = () => changeSong((currentSongIndex + songs.lenght - 1) % songs.length);
 
-bar.oniput = () => {
+bar.oninput = () => {
   audio.currentTime = Number(bar.value);
   updateUI();
 };
 
-list.oneclick = (event) => {
+list.onclick = (event) => {
   const item = event.target.closest("[data-song]")
   if (item) {
     changeSong(Number(item.dataset.song));
