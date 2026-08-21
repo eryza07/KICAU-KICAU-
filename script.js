@@ -1,6 +1,6 @@
 const songs = [
   ["Golden Brown", "The Stranglers", "Golden Brown.mp3"]
-  ["What If I Call", "Alex Crichton", "What  If I Call.mp3]
+  ["What If I Call", "Alex Crichton", "What If I Call.mp3]
   ["Country Roads", " THE Gypsy Queens", "Country Roads.mp3]
 ];
 
