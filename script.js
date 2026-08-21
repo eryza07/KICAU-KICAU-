@@ -1,7 +1,7 @@
 const songs = [
-  ["Golden Brown", "The Stranglers", "Golden Brown.mp3"],
-  ["What If I Call", "Alex Crichton", "What If I Call".mp3],
-  ["Country Roads", " THE Gypsy Queens", "Country Roads".mp3],
+  ["Golden Brown", "The Stranglers", 209, "Golden Brown.mp3"],
+  ["What If I Call", "Alex Crichton", 194, "What If I Call".mp3],
+  ["Country Roads", " THE Gypsy Queens", 173, "Country Roads".mp3],
 ];
 
 const $ = (id) => document.querySelector(id);
